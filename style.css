@@ -2766,3 +2766,7 @@ body .social a:hover {
     }
 
 }
+
+.milestone-text {
+    font-weight: 700;
+}
