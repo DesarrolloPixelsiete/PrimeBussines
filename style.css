@@ -109,7 +109,7 @@ body pre {
 }
 
 .section:not(.full-width-section) .content-wrapper {
-    max-width: 970px;
+    max-width: 1200px;
     margin-right: 0;
     margin-left: auto;
     padding-left: 10px;
@@ -135,12 +135,12 @@ body pre {
 }
 
 .left-text p {
-    margin: 0 45px 0 0;
+    margin: 0 16px 0 0;
     padding: 10px 0;
 }
 
 .right-text p {
-    margin: 0 0 0 45px;
+    margin: 0 0 0 16px;
     padding: 10px 0;
 }
 
@@ -191,16 +191,6 @@ a.button:hover {
     line-height: 30px;
     position: relative;
     display: inline-block;
-}
-
-.coco-button:before {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    height: 2px;
-    width: 100%;
-    transition: .35s ease-out;
-    background-color: #cfd6e3;
 }
 
 .coco-button:hover:before {
@@ -501,7 +491,7 @@ body .sm-clean li.active a {
 ====================================== */
 
 #home {
-    background-image: url(images/oficinas_disponibles_prime_bussines.jpg);
+    background-image: url(images/oficinas_privadas_prime_bussines.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -518,7 +508,7 @@ body .sm-clean li.active a {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #1d3152;
+    background-color: #1d315294;
     opacity: .7;
 }
 
@@ -891,12 +881,12 @@ ul.milestone-holder {
 ul.milestone-holder > li {
     width: 100%;
     text-align: center;
-    background-color: #688ce8;
+    background-color: #279589;
     padding: 40px 10px;
 }
 
 ul.milestone-holder > li:nth-child(2) {
-    background-color: #577ddd;
+    background-color: #0d3c3a;
 }
 
 ul.milestone-holder > li:nth-child(3) {
@@ -923,6 +913,48 @@ ul.milestone-holder .milestone-num-k:after {
     content: 'K';
 }
 
+/* 02 */
+
+ul.milestone-holder-02 {
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+ul.milestone-holder-02 > li {
+    width: 100%;
+    text-align: center;
+    background-color: #0d3c3a;
+    padding: 40px 10px;
+}
+
+ul.milestone-holder-02 > li:nth-child(2) {
+    background-color: #279589;
+}
+
+ul.milestone-holder-02 > li:nth-child(3) {
+    background-color: #5074cd;
+}
+
+ul.milestone-holder-02 > li p {
+    margin-bottom: 0;
+}
+
+ul.milestone-holder-02 .milestone-num {
+    font-size: 44px;
+    line-height: 100%;
+    font-weight: 700;
+    margin-bottom: 5px;
+
+}
+
+ul.milestone-holder-02 .milestone-num {
+    position: relative;
+}
+
+ul.milestone-holder-02 .milestone-num-k:after {
+    content: 'K';
+}
 
 /* ===================================
     7. Portfolio Section CSS
@@ -1185,7 +1217,7 @@ ul.milestone-holder .milestone-num-k:after {
     z-index: 1;
 }
 .pricing-table:not(.populated) {
-    margin: 70px 0 0;
+    margin: 0px 0 0;
 }
 .pricing-table.populated {
     box-shadow: 0px 0px 100px 0px #09132b;
@@ -1194,12 +1226,17 @@ ul.milestone-holder .milestone-num-k:after {
 .pricing-table .pricing-holder {
     color: #fff;
     text-align: center;
-    background-color: #577ddd;
+    background-color: #279589;
     padding-bottom: 45px;
     margin-bottom: 20px;
+    height: 570px;
+    max-height: 570px;
+    min-height: 570px;
 }
 
 .pricing-table .heading {
+    position: relative;
+    top: 19px;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -1216,7 +1253,7 @@ ul.milestone-holder .milestone-num-k:after {
 }
 
 .pricing-table .heading-big-title {
-    font-size: 24px;
+    font-size: 19px;
     font-weight: 800;
     letter-spacing: 5px;
     text-transform: uppercase;
@@ -1225,7 +1262,7 @@ ul.milestone-holder .milestone-num-k:after {
 .pricing-table .pricing-header {
     font-size: 20px;
     line-height: 100%;
-    padding: 50px 0
+    padding: 35px 0
 }
 
 .pricing-table .pricing-header .pricing-currency {
@@ -1235,23 +1272,29 @@ ul.milestone-holder .milestone-num-k:after {
 .pricing-table .pricing-header .pricing-price {
     font-size: 60px;
     line-height: 44px;
-    font-weight: 700
+    font-weight: 500
 }
 
 .pricing-table .pricing-content {
     padding: 0 5%;
-    text-align: left;
+    text-align: center;
 }
 
 .pricing-table .pricing-content ul {
     list-style: none;
     padding: 0;
     display: table;
-    margin: 0 auto
+    margin: 0 auto;
+    width: 100%;
+    height: 292px;
 }
 
 .pricing-table .pricing-content ul li {
-    margin-bottom: 10px
+    margin-bottom: 20px;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+    line-height: 1.3em;
+    padding-bottom: 16px;
 }
 
 .pricing-table .pricing-content ul li:last-child {
@@ -1276,26 +1319,22 @@ ul.milestone-holder .milestone-num-k:after {
 }
 
 .pricing-table a {
-    color: #cfd6e3;
+    color: #fff;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 30px;
     position: relative;
-    display: inline-block
-}
-
-.pricing-table a:before {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    height: 2px;
-    width: 100%;
-    transition: .35s ease-out;
-    background-color: #cfd6e3
+    display: inline-block;
+    background-color: #0d3c3a;
+    padding: 8px 20px 8px 20px;
 }
 
 .pricing-table a:hover:before {
     width: 10px
+}
+
+.content_button_pricing {
+    margin-top: 30px;
 }
 
 /* ===================================
@@ -2769,4 +2808,10 @@ body .social a:hover {
 
 .milestone-text {
     font-weight: 700;
+}
+
+.text-banner-prime {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 600;
 }
