@@ -48,7 +48,7 @@
                                 <a href="#about">Beneficios</a>
                             </li>
                             <li>
-                                <a href="#portfolio">Ubicaciones</a>
+                                <a href="ubicaciones.html">Ubicaciones</a>
                             </li>
                             <li>
                                 <a href="#pricing">Galería</a>
@@ -78,11 +78,103 @@
                             </h1>
                             <p class="text-banner-prime">En las mejores zonas de la CDMX</p>
                         </div>
-                        <div class="col-12 col-md-6 p-0 last center-text m-0">
-                            <a href="https://vimeo.com/199192931" data-rel="prettyPhoto[home]"
+                        <div class="col-12 col-md-6 p-0 last center-text m-0 form-home">
+                            <div class="head-form">
+                                <h3>RENTA EL MEJOR LUGAR<br>
+                                    PARA TU OFICINA</h3>
+                                <p>Proporciónanos tus datos, nos pondremos en contacto contigo lo más pronto posible
+                                    para
+                                    asesorarte y obtengas la oficina adecuada a tus necesidades</p>
+                                <form method="POST" id="inicio_form"
+                                    action="https://contratos.primebusinessmx.com/solicitud/inicio">
+                                    <div class="inp_style">
+                                        <input type="text" placeholder="*Nombre" name="nombre" id="nombre"
+                                            required="required" maxlength="45" />
+                                    </div>
+                                    <div class="inp_style">
+                                        <input type="text" placeholder="*Apellidos" name="apellidos" id="apellido"
+                                            required="required" maxlength="45" />
+                                    </div>
+                                    <div class="inp_style">
+                                        <input type="email" placeholder="*Correo" name="correo" id="correo"
+                                            required="required" maxlength="45" />
+                                    </div>
+                                    <div class="inp_style">
+                                        <input type="tel" placeholder="*Teléfono" name="telefono" id="telefono"
+                                            required="required" maxlength="15" />
+                                    </div>
+                                    <div class="inp_style">
+                                        <input type="text" placeholder="*Empresa" name="empresa" id="empresa"
+                                            required="required" maxlength="45" />
+                                    </div>
+                                    <div class="inp_style ">
+                                        <input type="text" placeholder="¿Cuántos miembros de tu equipo son?"
+                                            name="numero_usuarios" id="equipo" />
+                                    </div>
+                                    <div class="inp_style">
+                                        <select name="ubicacion" id="ubicacion" required="required">
+
+                                            <option value="17">Av. Marina Nacional 385 Verónica Anzures, CDMX</option>
+                                            <option value="10">Orizaba No. 154 Colonia Roma Norte, Alcaldía Cuauhtémoc
+                                            </option>
+                                            <option value="11">Campeche No. 410 Colonia Hipódromo Condesa, Alcaldía
+                                                Cuauhtémoc
+                                            </option>
+                                            <option value="12">Insurgentes Sur No. 1388 Colonia Actipan, Alcaldía Benito
+                                                Juárez
+                                            </option>
+                                            <option value="13">Londres No. 175 Colonia Juárez, Alcaldía Cuauhtémoc
+                                            </option>
+                                            <option value="16">Palmas Green Tower – Blvd. Manuel Ávila Camacho 118 Lomas
+                                                de
+                                                Chapultepec, Alcaldía Miguel Hidalgo</option>
+                                            <option value="17">Av. Marina Nacional 385 Verónica Anzures, CDMX</option>
+                                            <option value="19">S. José de Los Leones 1, San Andres Atoto, 53569
+                                                Naucalpan de
+                                                Juárez, Mex.</option>
+                                        </select>
+                                    </div>
+                                    <div class="inp_style">
+                                        <textarea name="comentario" placeholder="Cuéntanos más de tus necesidades"
+                                            id="comentario" maxlength="350"></textarea>
+                                    </div>
+                                    <div class="inp_style">
+                                        <div class="g-recaptcha" data-sitekey="6LcsbCAeAAAAABJ103VLU2OPgXVdPfAYTn_XofTJ"
+                                            data-callback="sendForm"></div>
+                                    </div>
+                                    <style>
+                                        .challenge-box.active {
+                                            height: 70px;
+                                        }
+                                    </style>
+                                    <input type="hidden" name="form_source" id="form_source" value="contrata" />
+                                    <div class="checking_fiability_container" style="height: 0px !important;">
+                                        <style>
+                                            .checking_fiability_container {
+                                                transform: translateY(-10000px);
+                                            }
+                                        </style>
+                                        <input type="text" name="checking_fiability" id="checking_fiability" value="" />
+                                    </div>
+                                    <input type="hidden" id="utm_source" name="utm_source"
+                                        value="<?php echo !empty($_GET['utm_source']) && isset($_GET['utm_source']) ? $_GET['utm_source'] : ''; ?>" />
+                                    <input type="hidden" id="utm_medium" name="utm_medium"
+                                        value="<?php echo !empty($_GET['utm_medium']) && isset($_GET['utm_medium']) ? $_GET['utm_medium'] : ''; ?>" />
+                                    <input type="hidden" id="utm_campaign" name="utm_campaign"
+                                        value="<?php echo !empty($_GET['utm_campaign']) && isset($_GET['utm_campaign']) ? $_GET['utm_campaign'] : ''; ?>" />
+                                    <button type="submit" name="guardar_uno" id="sendLeadRequest"
+                                        disabled>ENVIAR</button>
+                                </form>
+                                <script>
+                                    function sendForm(token) {
+                                        document.getElementById("sendLeadRequest").disabled = false;
+                                    }
+                                </script>
+                            </div>
+                            <!-- <a href="https://vimeo.com/199192931" data-rel="prettyPhoto[home]"
                                 class="play-button-holder cocobasic-pulse">
                                 <i class="fa fa-play" aria-hidden="true"></i>
-                            </a>
+                            </a> -->
                         </div>
                     </div>
                 </div>
@@ -114,9 +206,12 @@
                                 <p>
                                     Nuestro equipo está integrado por profesionales en el área de espacios de trabajo en
                                     las [ principales ubicaciones de la Ciudad de México ]. En todo momento buscamos
-                                    lugares adecuados para ti y tus empleados. Estamos preocupados en <b>innovar tu espacio
-                                    laboral</b>, aportando en cada ubicación un [ toque distintivo y exclusivo ] que hará de
-                                    <b>tu oficina un entorno agradable</b> para que todo tu equipo aumente su productividad y
+                                    lugares adecuados para ti y tus empleados. Estamos preocupados en <b>innovar tu
+                                        espacio
+                                        laboral</b>, aportando en cada ubicación un [ toque distintivo y exclusivo ] que
+                                    hará de
+                                    <b>tu oficina un entorno agradable</b> para que todo tu equipo aumente su
+                                    productividad y
                                     colaboración día a día.
                                     <b>¡Prime Business, tú mejor opción!</b>
                                 </p>

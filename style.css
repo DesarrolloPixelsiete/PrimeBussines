@@ -54,13 +54,13 @@ body {
     font-size: 16px;
     line-height: 1.8;
     font-weight: 400;
-    color: #cfd6e3;
-    background-color: #10141b;
+    color: #222;
+    background-color: #fff;
     overflow-x: hidden;
 }
 
 .section-light {
-    background-color: #1b212c;
+    background-color: #f4f3f0;
 }
 
 body a {
@@ -2814,4 +2814,251 @@ body .social a:hover {
     font-size: 24px;
     color: #fff;
     font-weight: 600;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.menu-ubications {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu-ubications li {
+    font-size: 14px;
+}
+
+.mt-62 {
+    margin-top: 62px;
+}
+
+.button-plans {
+    color: #fff;
+    margin-top: 16px;
+    width: 100% !important;
+    display: block;
+    background-color: #279589;
+    text-align: center;
+    padding: 8px 16px;
+    opacity: 0.6;
+    transition: ease-in 0.5s;
+    font-weight: 500;
+}
+
+.button-plans:hover {
+    color: #fff;
+    opacity: 1;
+}
+
+/* Styles Single office */
+
+.jumbotron {
+    color: #fff;
+    height: 400px;
+    text-align: center;
+    overflow: hidden;
+    background: #000;  /* fallback for old browsers */
+    background: linear-gradient(rgb(255 255 255 / 28%), rgb(0 0 0 / 75%)), url("images/prime_bussines_marina_nacional.jpg");  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(rgb(255 255 255 / 28%), rgb(0 0 0 / 75%)), url("images/prime_bussines_marina_nacional.jpg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 60px;
+}
+
+.content-banner-offices {
+    padding: 100px 0px;
+}
+
+/* .overlay {
+    content: " ";
+    position: absolute;
+    background-color: rgb(0 0 0 / 27%);
+    height: 400px;
+    width: 100%;
+    left: 0%;
+    right: 0%;
+} */
+
+
+.content-offices {
+    padding: 0px 60px;
+    margin-top: 100px;
+}
+
+.title-offices {
+    color: #000;
+    font-size: 45px;
+}
+
+.col-icon {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.col-icon img {
+    width: 70%;
+}
+
+.information-row {
+    border: 1px solid #ddd;
+    padding: 16px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.content-offices h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.content-description-office h5 {
+    font-size: 19px;
+    margin: 0px !important;
+    padding: 0 !important;
+}
+
+.content-description-office span, p{
+    font-size: 14px;
+    margin-bottom: 0px !important;
+}
+
+.card-service {
+    padding-left: 8px;
+    padding-right: 8px;
+    height: 8rem;
+    background-color: #f7f7f7;
+    margin-bottom: 1.3rem;
+    text-align: center;
+    color: #000;
+    line-height: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-service img {
+    width: 48px;
+}
+
+.card-service .demo-icon {
+    color: #000;
+    font-size: 3em;
+}
+
+.text-ubication {
+    font-size: 16px;
+    margin-bottom: 20px !important;
+}
+
+/* Form */
+
+.head-form h3 {
+    font-size: 20px;
+    text-align: center;
+    margin: 0 !important;
+    line-height: 1.3em !important;
+}
+
+.head-form p {
+    text-align: center;
+}
+
+.head-form {
+    position: sticky;
+    top: 77px;
+    width: 100%;
+}
+
+  /* Form */
+
+  .head-form h1 {
+    text-align: center
+}
+
+.head-form {
+    padding: 15px;
+    background: #f7f7f7;
+    left: 0;
+    right: 0;
+    bottom: calc(100% + 12vw);
+    width: 100%;
+}
+
+.head-form form .inp_style {
+    width: 100%;
+}
+
+.head-form form .inp_style:nth-child(odd) {
+    float: left;
+}
+
+.head-form form .inp_style:nth-child(even) {
+    float: right;
+}
+
+.head-form form .inp_style:nth-last-child(2) {
+    width: 100%
+}
+
+.head-form form input,
+.head-form form textarea,
+.head-form form select {
+    margin: 5px 0;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    padding: 20px 16px;
+    font-size: 12px;
+    background: #fff;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+}
+
+.head-form button {
+    padding: 16px 10px;
+    width: 100%;
+    margin: 10px auto 0px auto;
+    display: inherit;
+    position: relative;
+    top: 5px;
+    background: #053c3a;
+    color: #fff;
+    cursor: pointer;
+}
+
+.head-form button:hover {
+    background: #159689;
+}
+
+.head-form h1,
+.head-form h2 {
+    text-align: center;
+}
+
+.head-form form {
+    background: #f7f7f7;
+    padding: 15px;
+}
+
+.form-home .head-form form .inp_style {
+    width: calc(50% - 7px);
+}
+
+.form-home .head-form h3  {
+    color:#000;
+}
+
+.form-home .head-form p {
+    color:#000;
+}
+
+/* Mrina Nacional background */
+
+.page-template-marina {
+    background: #fff;
+    color: #000 !important;
 }
