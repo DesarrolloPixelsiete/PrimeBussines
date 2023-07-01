@@ -60,7 +60,7 @@ body {
 }
 
 .section-light {
-    background-color: #f4f3f0;
+    background-color: #fff;
 }
 
 body a {
@@ -144,16 +144,17 @@ body pre {
     padding: 10px 0;
 }
 
-.page-title-holder {
-    margin-bottom: 75px;
-}
-
 .section h2.entry-title {
-    font-size: 16px;
-    font-weight: 500;
     letter-spacing: 5px;
-    padding-top: 0;
     line-height: 1;
+    background: #279589;
+    color: #fff;
+    width: 156px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 11px 12px;
 }
 
 /* ===================================
@@ -474,11 +475,14 @@ a.button:hover {
 
 body .sm-clean a:hover,
 body .sm-clean li.active a {
-    color: #688ce8;
+    color: #4abef7;
 }
 
 .sm-clean li {
     margin-right: 10px;
+}
+.active {
+    color: #4abef7 !important;
 }
 
 .sm-clean li:last-child {
@@ -589,6 +593,11 @@ h1.entry-title {
 
 #services {
     padding-bottom: 6%;
+    padding-top: 1%;
+    background-image: url(images/manchas_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 #services .section-wrapper {
@@ -709,13 +718,25 @@ h1.entry-title {
 
 .service-holder {
     display: flex;
+    gap: 20px;
+    margin: 20px 0;
 }
 
 .service-item {
     position: relative;
     width: 100%;
     overflow: hidden;
-    padding-top: 110px;
+    padding-top: 68px;
+    border: 1px solid #4abef7;
+    transition: ease-in 0.2s;
+}
+
+.service-item:hover {
+    border-color: transparent;
+    box-shadow: 0px 10px 80px rgba(0,0,0,0.08);
+    outline: 0;
+    transform: scale(1.1);
+    z-index: 4;
 }
 
 .service-num {
@@ -728,22 +749,14 @@ h1.entry-title {
 }
 
 .service-txt {
-    color: #fff;
-    background-color: #688ce8;
-    padding: 20px;
+    color: #000;
+    background-color: #fff;
+    padding: 12px 16px;
     margin-top: -50px;
     text-align: center;
     min-height: 87px;
     align-items: center;
     display: grid;
-}
-
-.service-holder > div:nth-of-type(2) .service-txt {
-    background-color: #577DDD;
-}
-
-.service-holder > div:nth-of-type(3) .service-txt {
-    background-color: #5074CD;
 }
 
 .service-txt h4 {
@@ -807,7 +820,7 @@ h1.entry-title {
     width: 100%;
     height: 100%;
     transition: opacity .5s;
-    background: linear-gradient(89.84deg, #1A212C 0.12%, rgba(26, 33, 44, 0) 162.77%);
+    background: linear-gradient(89.84deg, #279589 0.12%, rgba(26, 33, 44, 0) 162.77%);
     transform: matrix(-1, 0, 0, 1, 0, 0);
     top: 0;
     left: 0;
@@ -1964,16 +1977,10 @@ footer ul {
 }
 
 .footer {
-    font-size: 16px;
-    line-height: 36px;
     padding-top: 30px;
     padding-bottom: 60px;
     clear: both;
     color: #fff;
-    text-align: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center top;
     background-color: #021619;
 }
 
@@ -2921,8 +2928,13 @@ body .social a:hover {
 }
 
 .content-description-office span, p{
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 0px !important;
+}
+
+.global-title {
+    font-size: 32px;
+    font-weight: 800;
 }
 
 .card-service {
@@ -2940,11 +2952,19 @@ body .social a:hover {
     align-items: center;
 }
 
+.card-service p {
+    line-height: 1.3em;
+}
+
+.card-service .demo-icon {
+    font-size: 1em;
+}
+
 .card-service img {
     width: 48px;
 }
 
-.card-service .demo-icon {
+.card-service    {
     color: #000;
     font-size: 3em;
 }
@@ -3062,3 +3082,170 @@ body .social a:hover {
     background: #fff;
     color: #000 !important;
 }
+
+/* End Marina */
+.title-benefits{
+    margin-bottom: 25px !important;
+}
+
+.cards-benefits {
+    border: 1px solid rgb(39 149 137);
+    padding: 32px 32px 24px;
+    min-height: 290px;
+    border-bottom-left-radius: 42px;
+    border-top-right-radius: 42px;
+    transition: ease-in 0.2s;
+}
+
+.cards-benefits img {
+    width: 50%;
+}
+
+.row-benefits .col-md-3:nth-child(2) {
+    margin-top: 40px !important;
+}
+
+.row-benefits .col-md-3:nth-child(4) {
+    margin-top: 40px !important;
+}
+
+.cards-benefits:hover {
+    border-color: transparent;
+    box-shadow: 0px 10px 80px rgba(0,0,0,0.08);
+    outline: 0;
+    transform: scale(1.1);
+}
+
+.cards-benefits h5 {
+    font-size: 20px;
+    line-height: 1.3em;
+    padding: 8px 0px;
+}
+
+.cards-benefits p {
+    /* text-align: justify; */
+    font-size: 14px;
+}
+
+#beneficios {
+    background-image: url(images/geom_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content-offices-aviable {
+    padding-left: 50px;
+}
+
+.row-number-offices {
+    margin-top: 50px;
+}
+
+.card-number-offices {
+    border-top: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+}
+
+.card-number-offices span {
+    padding-top: 25px;
+    font-size: 48px;
+    padding-left: 4px;
+    color: #747475;
+}
+
+.card-number-offices p {
+    font-size: 18px;
+    line-height: 1.67;
+    font-weight: 500;
+    padding-left: 4px;
+    color: #747475;
+}
+
+/* footer */
+
+.footer {
+    margin-top: 40px !important;
+}
+
+.content-footer {
+    padding: 0 30px;
+    font-size: 13px !important;
+}
+
+.content-footer ul li {
+    border-bottom: 1px solid #424242;
+    padding: 5px 0px;
+}
+
+.content-footer p {
+    text-align: left;
+    font-size: 13px !important;
+    line-height: 1.5em;
+}
+
+.logo-footer {
+    width: 50% !important;
+    text-align: left !important;
+}
+
+.content-footer h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0px !important;
+    padding: 0 !important;
+}
+
+.page-template-ubications .header-holder{
+    background-color: #151c28;
+}
+
+
+/* Contrata */
+
+.page-template-contact h4 {
+    text-align: center;
+}
+
+
+.page-template-contact .desc {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 50px !important;
+}
+
+.card-contatacion {
+    background-color: #fff;
+    padding: 16px;
+    text-align: center;
+    border-radius: 4px;
+    margin: 16px 0;
+    min-height: 245px !important;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+}
+
+.card-contatacion h4 {
+    font-size: 18px !important;
+    line-height: 1.3em;
+    color: #222;
+    font-weight: 700;
+    padding-bottom: 8px !important;
+    padding-top: 8px !important;
+}
+
+.card-contatacion p {
+    font-size: 14px !important;
+    color: #222;
+    font-weight: 500;
+    line-height: 1.3em;
+}
+
+.card-contatacion img {
+    width: 77px;
+}
+
+

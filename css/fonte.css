@@ -25,7 +25,6 @@
   font-style: normal;
   font-weight: normal;
   speak: none;
- 
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
@@ -50,6 +49,7 @@
   /* Font smoothing. That was taken from TWBS */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #000;
  
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
@@ -68,7 +68,7 @@
 .icon-recep:before { content: '\e80a'; } /* '' */
 .icon-bici:before { content: '\e80b'; } /* '' */
 
-.demo-icon { color: #fff; font-size: 6em}
+.demo-icon { color: #fff; font-size: 4em}
 
 
 
