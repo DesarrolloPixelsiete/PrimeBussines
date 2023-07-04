@@ -50,7 +50,7 @@
 ====================================== */
 
 body {
-    font-family: 'Montserrat',sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     line-height: 1.8;
     font-weight: 400;
@@ -221,7 +221,7 @@ a.button:hover {
     background-color: #232E41;
 }
 
- .swiper-slide {
+.swiper-slide {
     touch-action: none;
 }
 
@@ -286,7 +286,7 @@ a.button:hover {
         right: 110px;
     }
 
-    .carousel-image-slider .swiper-wrapper > div:last-of-type:after {
+    .carousel-image-slider .swiper-wrapper>div:last-of-type:after {
         display: none;
     }
 
@@ -430,21 +430,21 @@ a.button:hover {
 #toggle .second-menu-line {
     -webkit-transition: -webkit-transform 0.3s ease;
     transition: transform 0.3s ease;
-    -webkit-transform: translate3d(10px,0,0);
-    transform: translate3d(10px,0,0);
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
 }
 
 #toggle:hover .second-menu-line {
-    -webkit-transform: translate3d(0,0,0) !important;
-    transform: translate3d(0,0,0) !important;
+    -webkit-transform: translate3d(0, 0, 0) !important;
+    transform: translate3d(0, 0, 0) !important;
 }
 
 #toggle.on .second-menu-line {
-    -webkit-transform: translate3d(-10px,0,0);
-    transform: translate3d(-10px,0,0);
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
 }
 
-#toggle .third-menu-line{
+#toggle .third-menu-line {
     margin-bottom: 5px;
 }
 
@@ -481,6 +481,7 @@ body .sm-clean li.active a {
 .sm-clean li {
     margin-right: 10px;
 }
+
 .active {
     color: #4abef7 !important;
 }
@@ -539,7 +540,7 @@ h1.entry-title {
     position: relative;
     z-index: 1;
     opacity: .8;
-    text-shadow: 1px 0 6px rgba(0,0,0,.3);
+    text-shadow: 1px 0 6px rgba(0, 0, 0, .3);
     transition: all .5s;
     border: 5px solid;
     border-radius: 90%;
@@ -575,13 +576,15 @@ h1.entry-title {
 }
 
 @keyframes pulse {
-    0% {        
+    0% {
         transform: scaleX(1);
     }
-    50% {        
+
+    50% {
         transform: scale3d(1.05, 1.05, 1.05);
     }
-    to {        
+
+    to {
         transform: scaleX(1);
     }
 }
@@ -662,7 +665,7 @@ h1.entry-title {
     width: 62px;
     height: 84px;
     border-radius: 50px;
-    transform: translate(-31px,-12px);
+    transform: translate(-31px, -12px);
     transition: all .3s;
 }
 
@@ -672,9 +675,11 @@ h1.entry-title {
         opacity: 1;
         transform: translateY(-25px);
     }
+
     70% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
         transform: translateY(0);
@@ -682,11 +687,11 @@ h1.entry-title {
 
 }
 
-#top-service > div:nth-of-type(2) {
+#top-service>div:nth-of-type(2) {
     background-color: #577DDD;
 }
 
-#top-service > div:nth-of-type(3) {
+#top-service>div:nth-of-type(3) {
     background-color: #688CE8;
 }
 
@@ -733,7 +738,7 @@ h1.entry-title {
 
 .service-item:hover {
     border-color: transparent;
-    box-shadow: 0px 10px 80px rgba(0,0,0,0.08);
+    box-shadow: 0px 10px 80px rgba(0, 0, 0, 0.08);
     outline: 0;
     transform: scale(1.1);
     z-index: 4;
@@ -849,7 +854,7 @@ h1.entry-title {
     overflow: hidden;
 }
 
-.cacobasic-carousel-image-slider .swiper-wrapper > div:last-of-type {
+.cacobasic-carousel-image-slider .swiper-wrapper>div:last-of-type {
     margin-right: 20% !important;
 }
 
@@ -891,22 +896,22 @@ ul.milestone-holder {
     display: flex;
 }
 
-ul.milestone-holder > li {
+ul.milestone-holder>li {
     width: 100%;
     text-align: center;
     background-color: #279589;
     padding: 40px 10px;
 }
 
-ul.milestone-holder > li:nth-child(2) {
+ul.milestone-holder>li:nth-child(2) {
     background-color: #0d3c3a;
 }
 
-ul.milestone-holder > li:nth-child(3) {
+ul.milestone-holder>li:nth-child(3) {
     background-color: #5074cd;
 }
 
-ul.milestone-holder > li p {
+ul.milestone-holder>li p {
     margin-bottom: 0;
 }
 
@@ -934,22 +939,22 @@ ul.milestone-holder-02 {
     display: flex;
 }
 
-ul.milestone-holder-02 > li {
+ul.milestone-holder-02>li {
     width: 100%;
     text-align: center;
     background-color: #0d3c3a;
     padding: 40px 10px;
 }
 
-ul.milestone-holder-02 > li:nth-child(2) {
+ul.milestone-holder-02>li:nth-child(2) {
     background-color: #279589;
 }
 
-ul.milestone-holder-02 > li:nth-child(3) {
+ul.milestone-holder-02>li:nth-child(3) {
     background-color: #5074cd;
 }
 
-ul.milestone-holder-02 > li p {
+ul.milestone-holder-02>li p {
     margin-bottom: 0;
 }
 
@@ -983,7 +988,7 @@ ul.milestone-holder-02 .milestone-num-k:after {
     transform: translateY(70px);
 }
 
-#portfolio-wrapper .category-filter-list > div {
+#portfolio-wrapper .category-filter-list>div {
     font-size: 14px;
     font-weight: 500;
     display: inline-block;
@@ -994,12 +999,12 @@ ul.milestone-holder-02 .milestone-num-k:after {
     cursor: pointer;
 }
 
-#portfolio-wrapper .category-filter-list > div:last-of-type {
+#portfolio-wrapper .category-filter-list>div:last-of-type {
     margin-right: 0;
 }
 
-#portfolio-wrapper .category-filter-list > div.is-checked,
-#portfolio-wrapper .category-filter-list > div:hover {
+#portfolio-wrapper .category-filter-list>div.is-checked,
+#portfolio-wrapper .category-filter-list>div:hover {
     background-color: #688ce8;
 }
 
@@ -1049,7 +1054,7 @@ ul.milestone-holder-02 .milestone-num-k:after {
     width: 100%;
 }
 
-.grid-item.p_one-half{
+.grid-item.p_one-half {
     width: 50%;
 }
 
@@ -1226,12 +1231,15 @@ ul.milestone-holder-02 .milestone-num-k:after {
 .pricing-table-container {
     margin: 40px 0 0;
 }
+
 .populated-container {
     z-index: 1;
 }
+
 .pricing-table:not(.populated) {
     margin: 0px 0 0;
 }
+
 .pricing-table.populated {
     box-shadow: 0px 0px 100px 0px #09132b;
 }
@@ -1650,7 +1658,7 @@ ul.milestone-holder-02 .milestone-num-k:after {
     13. Contact Section CSS
 ====================================== */
 
-.contact-form > p {
+.contact-form>p {
     margin-bottom: 0;
     position: relative;
 }
@@ -1658,7 +1666,7 @@ ul.milestone-holder-02 .milestone-num-k:after {
 .contact-form input[type=text],
 .contact-form input[type=email],
 .contact-form textarea {
-    font-family: 'Montserrat',sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     line-height: 25px;
     font-weight: 500;
@@ -1687,7 +1695,7 @@ p.contact-submit-holder {
     margin-bottom: 30px;
 }
 
-.contact-submit-holder:after{
+.contact-submit-holder:after {
     content: '';
     position: absolute;
     left: 0;
@@ -1699,7 +1707,7 @@ p.contact-submit-holder {
 }
 
 .contact-form input[type=submit] {
-    font-family: 'Montserrat',sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     display: inline-block;
     border: none;
@@ -2042,11 +2050,11 @@ body .social a:hover {
 }
 
 .footer .social-holder a:hover {
-    color: rgba(104,140,232,.8);
+    color: rgba(104, 140, 232, .8);
 }
 
 .footer,
-.footer a{
+.footer a {
     color: #cfd6e3;
 }
 
@@ -2070,7 +2078,7 @@ body .social a:hover {
     .blog-holder-scode {
         width: 100%;
         transform: none;
-    }    
+    }
 }
 
 @media screen and (max-width: 1360px) {
@@ -2295,6 +2303,7 @@ body .social a:hover {
     .top-service-section {
         padding: 28px 0;
     }
+
     #top-service .top-service-section:first-child {
         display: none;
     }
@@ -2302,7 +2311,7 @@ body .social a:hover {
     .text-slider-wrapper {
         padding: 10%;
     }
-    
+
     .medium-text {
         font-size: 40px;
         line-height: 105%;
@@ -2345,7 +2354,7 @@ body .social a:hover {
         margin-top: 15px;
     }
 
-    .member-social-holder > div {
+    .member-social-holder>div {
         display: inline-block;
         margin: 0 15px;
     }
@@ -2364,7 +2373,7 @@ body .social a:hover {
         margin-bottom: 0;
     }
 
-    li.milestone > div {
+    li.milestone>div {
         width: 100% !important;
         display: block;
         margin-left: auto !important;
@@ -2454,7 +2463,7 @@ body .social a:hover {
     }
 
     #home .content-wrapper,
-    ul.milestone-holder{
+    ul.milestone-holder {
         flex-direction: column;
     }
 
@@ -2540,11 +2549,11 @@ body .social a:hover {
 
     blockquote {
         max-width: 100%;
-    }  
+    }
 
-    .blog-holder-scode > article:first-of-type .post-thumbnail {
+    .blog-holder-scode>article:first-of-type .post-thumbnail {
         margin-top: 0;
-    }    
+    }
 
     .member-name {
         font-size: 35px;
@@ -2736,6 +2745,7 @@ body .social a:hover {
     .blog-holder>article {
         margin-bottom: 65px;
     }
+
     .blog-item-holder:first-of-type {
         margin-top: 0;
     }
@@ -2866,9 +2876,12 @@ body .social a:hover {
     height: 400px;
     text-align: center;
     overflow: hidden;
-    background: #000;  /* fallback for old browsers */
-    background: linear-gradient(rgb(255 255 255 / 28%), rgb(0 0 0 / 75%)), url("images/prime_bussines_marina_nacional.jpg");  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(rgb(255 255 255 / 28%), rgb(0 0 0 / 75%)), url("images/prime_bussines_marina_nacional.jpg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #000;
+    /* fallback for old browsers */
+    background: linear-gradient(rgb(255 255 255 / 28%), rgb(0 0 0 / 75%)), url("images/prime_bussines_marina_nacional.jpg");
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(rgb(255 255 255 / 28%), rgb(0 0 0 / 75%)), url("images/prime_bussines_marina_nacional.jpg");
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 60px;
@@ -2927,7 +2940,8 @@ body .social a:hover {
     padding: 0 !important;
 }
 
-.content-description-office span, p{
+.content-description-office span,
+p {
     font-size: 16px;
     margin-bottom: 0px !important;
 }
@@ -2964,7 +2978,7 @@ body .social a:hover {
     width: 48px;
 }
 
-.card-service    {
+.card-service {
     color: #000;
     font-size: 3em;
 }
@@ -2987,15 +3001,13 @@ body .social a:hover {
     text-align: center;
 }
 
-.head-form {
+.page-template-marina .head-form {
     position: sticky;
     top: 77px;
     width: 100%;
 }
 
-  /* Form */
-
-  .head-form h1 {
+.head-form h1 {
     text-align: center
 }
 
@@ -3068,12 +3080,12 @@ body .social a:hover {
     width: calc(50% - 7px);
 }
 
-.form-home .head-form h3  {
-    color:#000;
+.form-home .head-form h3 {
+    color: #000;
 }
 
 .form-home .head-form p {
-    color:#000;
+    color: #000;
 }
 
 /* Mrina Nacional background */
@@ -3084,7 +3096,7 @@ body .social a:hover {
 }
 
 /* End Marina */
-.title-benefits{
+.title-benefits {
     margin-bottom: 25px !important;
 }
 
@@ -3111,7 +3123,7 @@ body .social a:hover {
 
 .cards-benefits:hover {
     border-color: transparent;
-    box-shadow: 0px 10px 80px rgba(0,0,0,0.08);
+    box-shadow: 0px 10px 80px rgba(0, 0, 0, 0.08);
     outline: 0;
     transform: scale(1.1);
 }
@@ -3199,17 +3211,12 @@ body .social a:hover {
     padding: 0 !important;
 }
 
-.page-template-ubications .header-holder{
+.page-template-ubications .header-holder {
     background-color: #151c28;
 }
 
 
 /* Contrata */
-
-.page-template-contact h4 {
-    text-align: center;
-}
-
 
 .page-template-contact .desc {
     text-align: center;
@@ -3220,10 +3227,8 @@ body .social a:hover {
 .card-contatacion {
     background-color: #fff;
     padding: 16px;
-    text-align: center;
     border-radius: 4px;
     margin: 16px 0;
-    min-height: 245px !important;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 
 }
@@ -3247,5 +3252,3 @@ body .social a:hover {
 .card-contatacion img {
     width: 77px;
 }
-
-
